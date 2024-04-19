@@ -6,7 +6,7 @@ const useDataDonation = () => {
 
     useEffect(() => {
         const fetchData = async () =>{
-            const res = await fetch('/FakeData.json');
+            const res = await fetch('FakeData.json');
             const data = await res.json();
             setData(data)
         };
